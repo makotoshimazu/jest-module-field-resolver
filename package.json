@@ -1,0 +1,19 @@
+{
+  "name": "jest-module-field-resolver",
+  "version": "0.0.1",
+  "description": "Resolver for jest to resolve packages that have only module field instead of main. Original code is coped from https://gist.github.com/loklaan/9fe7768576466c5a31c2e7af4cfdecd0. ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makotoshimazu/jest-module-field-resolver.git"
+  },
+  "author": "Makoto Shimazu <makoto.shimaz@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/makotoshimazu/jest-module-field-resolver/issues"
+  },
+  "homepage": "https://github.com/makotoshimazu/jest-module-field-resolver#readme"
+}
