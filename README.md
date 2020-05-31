@@ -1,4 +1,6 @@
 # jest-module-field-resolver
+[![npm
+version](https://badge.fury.io/js/jest-module-field-resolver.svg)](https://badge.fury.io/js/jest-module-field-resolver)
 
 This package is for jest to use packages that don't have `main` field in their
 package.json.
