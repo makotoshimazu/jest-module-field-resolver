@@ -27,3 +27,9 @@ package.json.
      }
    }
    ```
+
+
+## Note
+Ref: https://github.com/facebook/jest/issues/2702#issuecomment-585595612
+This is based on
+https://gist.github.com/loklaan/9fe7768576466c5a31c2e7af4cfdecd0.
