@@ -1,4 +1,3 @@
-// Copied from https://gist.github.com/loklaan/9fe7768576466c5a31c2e7af4cfdecd0.
 /*
 |-------------------------------------------------------------------------------
 | Custom 'module resolver' for Jest
@@ -38,8 +37,12 @@ function mapModuleFieldToMain (pkg, pkgDir) {
   const isModuleFieldAvailable = moduleSrcPath &&
         fs.existsSync(path.resolve(pkgDir, moduleSrcPath));
 
-  if (isModuleFieldAvailable) {
-    return Object.assign({}, pkg, { main: moduleSrcPath });
+  // Use 'module' path only if 'main' is not available and 'module' field is
+  // found.
+  if (!('main' in pkg) && isModuleFieldAvailable) {
+    return Object.assign({}, pkg, {
+      main: moduleSrcPath,
+    });
   } else {
     return pkg;
   }
